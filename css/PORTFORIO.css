@@ -20,9 +20,6 @@ video {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  width:100% ;
-  height:100% ;
   z-index: -100;
   position: absolute;
   opacity: 0.5;
@@ -58,7 +55,7 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 110px;
-  margin-top: 200px;
+  margin-top: 800px;
 }
 
 
@@ -101,14 +98,10 @@ video {
 .card {
   background-color: #FFF;
 }
-.card-img-top {
-  background-image: url(./images/01.png);
 
-  width: 288px;
-  height: 225px;
-}
 
-.jumbotron-heading {
+
+.card-img-top.jumbotron-heading {
   color: #FFFFFF;
 }
 
@@ -117,9 +110,7 @@ video {
   background-color: #16160C;
 }
 
-.worklink{
-  background-color: #FFF;
-}
+
 
 h1,h2,h3 {
 	margin:0 0 35px 0;
@@ -159,6 +150,9 @@ textarea.form-control{
 
 .contact-container{
   margin: auto;
+  padding: 260px;
+  top: -220px;
+  right: 80px;
 }
 
 .contact-section {
@@ -175,17 +169,34 @@ textarea.form-control{
 .banner-social-buttons li {
   margin: 0 5px;
 }
-
- .workimages {
-   height: 225px;
-   width: 100%;
-   display: block;
+.worklink{
+  background-color: #FFF;
+  width: 400px;
+  height: 300px;
+}
+ .card-img-top.workimages {
+   width: 400px;
+   height: 300px;
+   padding: 5px
  }
+ .col-md-4 {
 
- .bg-light {
+ }
+.card.mb-4.shadow-sm{
+  width: 400px;
+  height: 300px;
+}
+.album.py-5.bg-light {
+
+float: left;
+margin: 110px;
    background-color: #16160C!important;
  }
+.row {
 
+  width:1300px ;
+  height:100px ;
+}
  .box1 {
 
      position: relative;
@@ -231,8 +242,12 @@ textarea.form-control{
   margin: auto;
 }
 
+.pb-5, {
+padding-bottom: 25rem!important;
+}
+
 .pb-5, .py-5 {
-padding-bottom: 7rem!important;
+    padding-bottom: 25rem!important;
 }
 
 .banner-social-buttons {
@@ -250,6 +265,7 @@ strong {
 
 h2 {
   font-family: "Kontanter-Bold";
+  color: white;
 }
 
 h3 {
@@ -280,12 +296,26 @@ font-family: "Kontanter-Bold";
 }
 
 .container {
-  width: 50%;
+  width: 120%;
 }
 
-@media (min-width: 1200px){
+@media screen and (min-width: 767px;){
 
-  .container {
-       max-width: auto;
-  }
+.card-img-top.workimages{
+  width: 500px;
+}
+
+}
+
+@media screen and (min-width: 767px;) {
+
+}
+
+@media screen and (min-width: 479px;) {
+.strong{
+  margin:100px ;
+}
+.album.py-5.bg-light {
+  display: inline-block;
+}
 }
